@@ -10,6 +10,7 @@ public class EmailaFriendAppleMcBookResultPage extends Utils{
         //waiting for url
         waitForUtlToBe("https://demo.nopcommerce.com/productemailafriend/4", 20);
         //using assert method to verify msg has been sent or not
-        Assert.assertEquals(getTextFromElement(By.xpath("//div[@class=\"result\"]")),"Your message has not been sent.");
+        Assert.assertEquals(getTextFromElement(By.xpath("//div[@class=\"result\"]")),"Your message has been sent."
+        ,"your message has not been sent");
     }
 }

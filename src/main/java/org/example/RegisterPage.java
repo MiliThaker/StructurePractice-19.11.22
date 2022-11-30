@@ -30,9 +30,9 @@ public class RegisterPage extends Utils{
         //select gender by clicking radio button
         clickOnElements(_genderSelection);
         //enter user's name
-        typeText(_firstNameField,"Mili");
+        typeText(_firstNameField,LoadProp.getProperty("firstname"));
         //entre user's surname
-        typeText(_lastNameField,"Thaker");
+        typeText(_lastNameField,LoadProp.getProperty("lastname"));
         //select date of birth
         selectFromDropDownByIndex(_dateOfBirth,1);
         //select month of birth
@@ -40,15 +40,15 @@ public class RegisterPage extends Utils{
         //select year of birth
         selectFromDropDownByIndex(_yearOfBirth,1);
         //enter user's email id
-        typeText(_emailIdField,"testers"+getTimeStamp()+"@gmail.com");
+        typeText(_emailIdField,LoadProp.getProperty("email_feild1")+getTimeStamp()+LoadProp.getProperty("email_feild2"));
         //enter company name
-        typeText(_companyNameField,"Best Testers ltd");
+        typeText(_companyNameField,LoadProp.getProperty("company_name"));
         //click on newsletter
         clickOnElements(_newsLetterSelection);
         //enter password
-        typeText(_passWord,"Test@1234");
+        typeText(_passWord,LoadProp.getProperty("password"));
         //confirm password
-        typeText(_confirmPassWord,"Test@1234");
+        typeText(_confirmPassWord,LoadProp.getProperty("confirorm_password"));
         //click on register button to complete the registration process
         clickOnElements(_registerButton);
     }

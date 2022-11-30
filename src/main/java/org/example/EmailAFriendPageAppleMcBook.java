@@ -21,9 +21,9 @@ public class EmailAFriendPageAppleMcBook extends Utils {
     //creating class to send an email
     public void sendAnEmailToAFriendAppleMcBook() {
 //enter user's friend email id
-        typeText(_entreFriendEmail, "very" + getTimeStamp() + "@gmail.com");
+        typeText(_entreFriendEmail, LoadProp.getProperty("friendemail1")+getTimeStamp()+LoadProp.getProperty("friendemail2"));
         //enter users' email id
-        typeText(_entreYouComments, "very good product");
+        typeText(_entreYouComments,LoadProp.getProperty("entre_coment_emailfriend_page"));
         //click on email button
         clickOnElements(_clickOnSendEmailButton);
     }
