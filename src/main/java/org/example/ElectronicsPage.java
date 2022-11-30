@@ -15,6 +15,6 @@ public class ElectronicsPage extends Utils {
     //creating method to navigate page to camera page from electronics page
     public void navigateToCameracPage() {
         //by exporting click on element from utils class to click on camera button
-        clickOnElements(By.xpath("//ul[@class=\"sublist\"]/li[1]"));
+        clickOnElements(By.xpath("//h2[@class=\"title\"]/a[@title=\"Show products in category Camera & photo\"]"));
     }
 }

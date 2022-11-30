@@ -11,7 +11,7 @@ public class RegisterResultPage extends Utils{
         //land on user registered successfully page
         waitForUtlToBe("https://demo.nopcommerce.com/registerresult/1?returnUrl=/", 20);
         //printing true result by verifying with assert
-        Assert.assertEquals(getTextFromElement(By.className("result")),"Your registration completed","Your registration completed");
+        Assert.assertEquals(getTextFromElement(By.className("result")),"Your registration completed","Your registration is not completed");
        //click on continue button to go on homepage
         clickOnElements(_clickOnContinueButton);
     }
